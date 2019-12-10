@@ -1,0 +1,22 @@
+.nav {
+    margin: 0 auto;
+
+    &__para {
+        font-family: 'GothamMediumRegular' !important;
+    }
+}
+
+.icons { 
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: black;
+    fill: black;
+}
+
+.icon-monticello-logo {
+    width: 75px;
+    height: 25px;
+    color: black;
+}
