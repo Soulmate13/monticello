@@ -18,10 +18,210 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>Monticello</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css"/>
     <link rel="stylesheet" href="./css/style.css"/>
   </head>
   <body>
-    <script src="../../dist/script/script.js"></script>
+    <div class="page">
+      <div class="news" id="news">
+        <div class="container container--lg">
+          <div class="news__wrapper">
+            <div class="news__heading">
+              <div class="row">
+                <div class="col-12">
+                  <hr class="news__line"/>
+                  <h2 class="news__title">Latest News</h2>
+                </div>
+              </div>
+              <div class="row">
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="news__slide-top"><img class="news__slide-img" src="../dist/img/news_1.png" alt="img"/>
+                        <svg class="icons icons--news news__slide-img--hover">
+                          <use xlink:href="#icon-plus">   </use>
+                        </svg>
+                      </div>
+                      <div class="news__slide-middle">
+                        <h3 class="news__slide-heading">See The Unmatched Beauty Of The Great.</h3>
+                        <p class="news__slide-paragraph">Free directories: directories are perfect for customers that are... searching for</p>
+                      </div>
+                      <div class="news__slide-bottom d-flex">
+                        <div class="news__slide-photo"></div>
+                        <div class="news__slide-subparagraph">
+                          <h4 class="news__slide-subtitle">Isaac Dunn</h4>
+                          <p class="news__slide-date">09 Feb 2017</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="news__slide">
+                        <div class="news__slide-top"><img class="news__slide-img" src="../dist/img/news_2.png" alt="img"/>
+                          <svg class="icons icons--news news__slide-img--hover">
+                            <use xlink:href="#icon-plus"></use>
+                          </svg>
+                        </div>
+                        <div class="news__slide-middle">
+                          <h3 class="news__slide-heading">Effective Advertising Pointers.</h3>
+                          <p class="news__slide-paragraph">Having a home based business is a wonderful asset to your life</p>
+                        </div>
+                        <div class="news__slide-bottom d-flex">
+                          <div class="news__slide-photo news__slide-photo--second"></div>
+                          <div class="news__slide-subparagraph">
+                            <h4 class="news__slide-subtitle">Dominic Freeman</h4>
+                            <p class="news__slide-date">24 Apr 2017</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="news__slide">
+                        <div class="news__slide-top"><img class="news__slide-img" src="../dist/img/news_3.png" alt="img"/>
+                          <svg class="icons icons--news news__slide-img--hover">
+                            <use xlink:href="#icon-plus"></use>
+                          </svg>
+                        </div>
+                        <div class="news__slide-middle">
+                          <h3 class="news__slide-heading">Hypnotize Yourself Into The Ghost.</h3>
+                          <p class="news__slide-paragraph">There are many things that are important to catalog design...</p>
+                        </div>
+                        <div class="news__slide-bottom d-flex">
+                          <div class="news__slide-photo news__slide-photo--third"></div>
+                          <div class="news__slide-subparagraph">
+                            <h4 class="news__slide-subtitle">Alice Ward</h4>
+                            <p class="news__slide-date">30 Dec 2017</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="news__slide">
+                        <div class="news__slide-top"><img class="news__slide-img" src="../dist/img/news_1.png" alt="img"/>
+                          <svg class="icons icons--news news__slide-img--hover">
+                            <use xlink:href="#icon-plus"></use>
+                          </svg>
+                        </div>
+                        <div class="news__slide-middle">
+                          <h3 class="news__slide-heading">Lorem ipsum dolor sit amet </h3>
+                          <p class="news__slide-paragraph">Lorem ipsum dolor sit, amet consectetur adipisicin</p>
+                        </div>
+                        <div class="news__slide-bottom d-flex">
+                          <div class="news__slide-photo"></div>
+                          <div class="news__slide-subparagraph">
+                            <h4 class="news__slide-subtitle">Isaac Dunn</h4>
+                            <p class="news__slide-date">09 Feb 2017</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="news__slide">
+                        <div class="news__slide-top"><img class="news__slide-img" src="../dist/img/news_2.png" alt="img"/>
+                          <svg class="icons icons--news news__slide-img--hover">
+                            <use xlink:href="#icon-plus"></use>
+                          </svg>
+                        </div>
+                        <div class="news__slide-middle">
+                          <h3 class="news__slide-heading">Lorem ipsum dolor sit amet </h3>
+                          <p class="news__slide-paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere, illo?</p>
+                        </div>
+                        <div class="news__slide-bottom d-flex">
+                          <div class="news__slide-photo news__slide-photo--second"></div>
+                          <div class="news__slide-subparagraph">
+                            <h4 class="news__slide-subtitle">Dominic Freeman</h4>
+                            <p class="news__slide-date">24 Apr 2017</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-prev-go"><i class="fas fa-angle-left button-arrow-left"></i></div>
+              <div class="swiper-button-next-go"><i class="fas fa-angle-right button-arrow-left">  </i></div>
+            </div>
+            <div class="news__slide-utilities">
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="gallery" id="gallery">
+        <div class="container container--lg">
+          <div class="gallery__wrapper">
+            <div class="gallery__heading">
+              <div class="row">
+                <div class="col-12">
+                  <hr class="gallery__line"/>
+                  <h2 class="gallery__title">Gallery</h2>
+                </div>
+              </div>
+            </div>
+            <div class="gallery__panel">
+              <div class="row no-gutters">
+                <div class="col-6">
+                  <div class="gallery__item"><a class="gallery__link" href="../dist/img/gallery_1.png" data-fancybox="gallery"><img class="gallery__img" src="../dist/img/gallery_1.png" alt="img"/><img class="gallery__img--hover" src="../dist/img/gallery_360.png" alt="img"/></a></div>
+                </div>
+                <div class="col-6">
+                  <div class="row no-gutters mb-2 ml-1">
+                    <div class="col-6">
+                      <div class="gallery__item gallery__item--small"><a class="gallery__link" href="../dist/img/gallery_2.png" data-fancybox="gallery"><img class="gallery__img" src="../dist/img/gallery_2.png" alt="img"/><img class="gallery__img--hover" src="../dist/img/gallery_360.png" alt="img"/></a></div>
+                    </div>
+                    <div class="col-6 pl-1">
+                      <div class="gallery__item gallery__item--small"><a class="gallery__link" href="../dist/img/gallery_3.png" data-fancybox="gallery"><img class="gallery__img" src="../dist/img/gallery_3.png" alt="img"/><img class="gallery__img--hover" src="../dist/img/gallery_360.png" alt="img"/></a></div>
+                    </div>
+                  </div>
+                  <div class="row no-gutters ml-1">
+                    <div class="col-6">
+                      <div class="gallery__item gallery__item--small"><a class="gallery__link" href="../dist/img/gallery_4.png" data-fancybox="gallery"><img class="gallery__img" src="../dist/img/gallery_4.png" alt="img"/><img class="gallery__img--hover" src="../dist/img/gallery_360.png" alt="img"/></a></div>
+                    </div>
+                    <div class="col-6 pl-1">
+                      <div class="gallery__item gallery__item--small"><a class="gallery__link" href="../dist/img/gallery_5.png" data-fancybox="gallery"><img class="gallery__img" src="../dist/img/gallery_5.png" alt="img"/><img class="gallery__img--hover" src="../dist/img/gallery_360.png" alt="img"/></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="gallery__bottom"><a class="btn" href="#">SEE MORE</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="map" id="map"></div>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__wrapper">
+            <div class="footer__top">
+              <div class="row">
+                <div class="col-3 offset-2"><a class="footer__link" href="#">
+                    <svg class="icons icons--footer footer__icon">
+                      <use class="footer__icon-use" xlink:href="#icon-monticello-logo"></use>
+                    </svg></a></div>
+                <div class="col-3 offset-3 d-flex align-items-center">
+                  <div class="footer__socials d-flex justify-content-between"><a class="footer__circle" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f footer__social-icon"></i></a><a class="footer__circle" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter footer__social-icon"></i></a><a class="footer__circle" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram footer__social-icon"></i></a></div>
+                </div>
+              </div>
+            </div>
+            <div class="footer__bottom">
+              <div class="row">
+                <div class="col-5 offset-2">
+                  <div class="footer__info">Copyrights &copy; 2017 Monticello</div><a class="footer__author">
+                    <div class="footer__author-info">Made with <i class="fas fa-heart footer__heart-icon"></i></div>
+                    <div class="footer__author-info">by Ga Huy</div></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="https://kit.fontawesome.com/f811e9d5c2.js" crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async="async" defer="defer"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/script_2.js"></script>
   </body>
 </html>

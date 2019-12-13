@@ -1,3 +1,4 @@
+include ../blocks/page/_page.pug
 include ../pug/icons.svg
 include ../blocks/nav/_nav.pug
 include ../blocks/about/_about.pug
@@ -10,6 +11,7 @@ include ../blocks/contact/_contact.pug
 include ../blocks/footer/_footer.pug
 include ../blocks/btn/_btn.pug
 include ../blocks/contact-icons/_contact-icons.pug
+include ../blocks/icons/_icons.pug
 
 <!DOCTYPE html>
 html(lang="en")
@@ -18,7 +20,16 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title Monticello
+        link(rel="stylesheet", href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css")
+        link(rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css")
         link(rel="stylesheet", href="./css/style.css")
     body
-        script(src=`../../dist/script/script.js`)
+        +page
+
+        script(src="https://code.jquery.com/jquery-3.4.1.min.js")
+        script(src="https://unpkg.com/swiper/js/swiper.js")
+        script(src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js")
         script(src='https://kit.fontawesome.com/f811e9d5c2.js' crossorigin='anonymous')
+        script(src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer)
+        script(src=`./js/script.js`)
+        script(src=`./js/script_2.js`)

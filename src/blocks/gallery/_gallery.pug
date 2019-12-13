@@ -1,0 +1,42 @@
+mixin gallery
+    .gallery#gallery
+        .container.container--lg
+            .gallery__wrapper
+                .gallery__heading
+                    .row
+                        .col-12
+                            hr.gallery__line
+                            h2.gallery__title Gallery
+                .gallery__panel
+                    .row.no-gutters
+                        .col-6
+                            .gallery__item
+                                a.gallery__link(href='../dist/img/gallery_1.png', data-fancybox="gallery")
+                                    img.gallery__img(src="../dist/img/gallery_1.png", alt="img")
+                                    img.gallery__img--hover(src="../dist/img/gallery_360.png", alt="img")
+                        .col-6
+                            .row.no-gutters.mb-2.ml-1
+                                .col-6
+                                    .gallery__item.gallery__item--small
+                                        a.gallery__link(href='../dist/img/gallery_2.png', data-fancybox="gallery")
+                                            img.gallery__img(src="../dist/img/gallery_2.png", alt="img")
+                                            img.gallery__img--hover(src="../dist/img/gallery_360.png", alt="img")
+                                .col-6.pl-1
+                                    .gallery__item.gallery__item--small
+                                        a.gallery__link(href='../dist/img/gallery_3.png', data-fancybox="gallery")
+                                            img.gallery__img(src="../dist/img/gallery_3.png", alt="img")
+                                            img.gallery__img--hover(src="../dist/img/gallery_360.png", alt="img")
+                                        
+                            .row.no-gutters.ml-1
+                                .col-6
+                                    .gallery__item.gallery__item--small
+                                        a.gallery__link(href='../dist/img/gallery_4.png', data-fancybox="gallery")
+                                            img.gallery__img(src="../dist/img/gallery_4.png", alt="img")
+                                            img.gallery__img--hover(src="../dist/img/gallery_360.png", alt="img")
+                                .col-6.pl-1
+                                    .gallery__item.gallery__item--small
+                                        a.gallery__link(href='../dist/img/gallery_5.png', data-fancybox="gallery")
+                                            img.gallery__img(src="../dist/img/gallery_5.png", alt="img")
+                                            img.gallery__img--hover(src="../dist/img/gallery_360.png", alt="img")
+                .gallery__bottom
+                    +btn(`SEE MORE`,`#`)
