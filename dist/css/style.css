@@ -3594,7 +3594,7 @@ html {
   align-items: center;
   position: absolute;
   right: 114px;
-  bottom: 253px;
+  bottom: 202px;
   z-index: 2; }
   .swiper-button-next-go:hover {
     cursor: pointer;
@@ -3617,7 +3617,7 @@ html {
   align-items: center;
   position: absolute;
   left: 116px;
-  bottom: 253px;
+  bottom: 202px;
   z-index: 2; }
   .swiper-button-prev-go:hover {
     cursor: pointer;
@@ -3721,6 +3721,85 @@ html {
   width: 100%;
   position: relative;
   overflow: hidden; }
+
+.contact {
+  position: absolute;
+  max-width: 770px;
+  max-height: 450px;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  top: -300px;
+  right: 415px; }
+  .contact__wrapper {
+    padding-top: 50px;
+    -webkit-box-shadow: 0 -4px 30px rgba(133, 133, 133, 0.2);
+    box-shadow: 0 -4px 30px rgba(133, 133, 133, 0.2); }
+  .contact__line {
+    max-width: 100px;
+    background-color: #2c4058;
+    margin-bottom: 35px; }
+  .contact__title {
+    text-align: center;
+    color: #2c4058;
+    font-family: 'gothambold1';
+    font-size: 44px;
+    font-weight: 500;
+    line-height: 22px;
+    text-transform: uppercase;
+    margin-bottom: 60px; }
+  .contact__link {
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 59px;
+    margin-bottom: 38px; }
+  .contact__info {
+    color: #2c4058;
+    font-family: 'GothamBook';
+    font-weight: 300;
+    display: inline-block;
+    letter-spacing: -0.8px; }
+  .contact__icon {
+    color: #7e5aff;
+    font-weight: 400;
+    font-size: 15px;
+    padding-right: 6px; }
+  .contact__link:hover .contact__icon {
+    color: #2c4058; }
+  .contact__link:hover .contact__info {
+    color: #2c4058; }
+  .contact__input {
+    max-width: 310px;
+    border-bottom: 1px solid #2c4058;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    padding-bottom: 15px;
+    font-family: 'GothamBook';
+    font-size: 18px; }
+  .contact__input:first-child {
+    margin-bottom: 40px; }
+  .contact__input:nth-child(2) {
+    margin-bottom: 30px; }
+  .contact__input::-webkit-input-placeholder {
+    color: rgba(44, 64, 88, 0.5);
+    font-family: 'GothamBook'; }
+  .contact__submit {
+    padding: 17px 42px;
+    border: 1px solid #2c4058;
+    color: #2c4058;
+    background-color: #fff;
+    font-family: 'GothamBook';
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-left: 169px;
+    cursor: pointer; }
+    .contact__submit:hover {
+      color: #fff;
+      background-color: #2c4058; }
 
 .footer {
   background-image: -webkit-linear-gradient(45deg, #55b7ff 0%, #7e5aff 100%);

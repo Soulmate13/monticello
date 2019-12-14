@@ -1,0 +1,29 @@
+mixin contact
+    .contact
+        .contact__wrapper
+            .row
+                .col-12
+                    hr.contact__line
+                    h2.contact__title get in touch
+            .row
+                .col-6
+                    a.contact__link(href="https://www.google.com/maps?q=Brooklyn", target="_blank")
+                        i.fas.fa-map-marker-alt.contact__icon
+                        p.contact__info 91 Nolan Extension Suite 670
+                    a.contact__link(href="+001-356-868-2454", target="_blank")
+                        i.fas.fa-phone-alt.contact__icon
+                        p.contact__info +001 356-868-2454
+                    a.contact__link(href="mailto:gahuy93@gmail.com", target="_blank")
+                        i.fas.fa-inbox.contact__icon
+                        p.contact__info gahuy93@gmail.com
+                    a.contact__link(href="tel:+001-356-868-2454", target="_blank")
+                        i.fas.fa-clock.contact__icon
+                        p.contact__info From 07:05 AM to 19:30 PM
+                .col-6
+                    form.contact__form(action="" id='form')
+                        input.contact__input(type="text", name="text" id="text" placeholder='Your name' required)
+                        input.contact__input(type="email", name="email", id="email" placeholder='Email' required)
+                        input.contact__submit(type="submit", value="submit")
+                        
+        
+
