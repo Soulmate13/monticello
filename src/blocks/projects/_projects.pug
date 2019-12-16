@@ -1,0 +1,39 @@
+mixin projects
+    .projects
+        .container.container--lg
+            .projects__wrapper
+                .row
+                    .col-12
+                        hr.projects__line
+                        h2.projects__title What we do
+
+                .projects__first
+                    .row                        
+                        .col-7
+                            .projects__img-wrapper
+                                img.projects__img(src="../dist/img/projects_1.png", alt="img")
+                        .col-5
+                            .projects__info
+                                h4.projects__subtitle-top One World
+                                h3.projects__subtitle-bottom Trade Center
+                                p.projects__paragraph Increasing prosperity in our lives can be accomplished by having the right frame of mind. The truth is, our thoughts are very powerful.
+                                .projects__btn-wrapper
+                                    +btn--small('MORE DETAILS', "#")
+                                a.projects__link(href="https://www.google.com/maps?q=new+york", target="_blank")
+                                    i.fas.fa-map-marker-alt.projects__icon
+                                    p.projects__details New York City, United States - 1776 feet
+                .projects__second
+                    .row                        
+                        .col-5
+                            .projects__info
+                                h4.projects__subtitle-top International
+                                h3.projects__subtitle-bottom Commerce Centre
+                                p.projects__paragraph Successful businesses have many things in common, today we’ll look at the big ‘R’ of recognition and how a digital advertising network may help.
+                                .projects__btn-wrapper
+                                    +btn--small('MORE DETAILS', "#")
+                                a.projects__link(href="https://www.google.com/maps/place/hong+kong/", target="_blank")
+                                    i.fas.fa-map-marker-alt.projects__icon
+                                    p.projects__details Hong Kong - 1588 Feet
+                        .col-7
+                            .projects__img-wrapper.projects__img-wrapper--right
+                                img.projects__img(src="../dist/img/projects_2.png", alt="img")

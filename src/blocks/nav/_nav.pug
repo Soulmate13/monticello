@@ -1,6 +1,27 @@
 mixin nav
     nav.nav
-        p.nav__para TEST TEXT
-        svg.icon.icon-monticello-logo
-            use(xlink:href="#icon-monticello-logo")
-
+        .container.container--lg
+            .nav__wrapper
+                .row
+                    .col-3
+                        a.nav__link(href=`#`)
+                                svg.icons.icons--footer.nav__icon
+                                    use.footer__icon-use(xlink:href="#icon-monticello-logo")
+                    .col-7.no-gutters
+                        ul.nav__list.d-flex.justify-content-around.align-items-center
+                            li.nav__item 
+                                a.nav__link(href=`#`) About us
+                            li.nav__item 
+                                a.nav__link(href=`#`) Projects
+                            li.nav__item
+                                a.nav__link(href=`#`) News
+                            li.nav__item 
+                                a.nav__link(href=`#`) Contact
+                    .col-2.d-flex.justify-content-between.align-items-center
+                        a.nav__circle(href="https://www.facebook.com/", target='_blank')
+                            i.fab.fa-facebook-f.nav__social-icon
+                        a.nav__circle(href="https://twitter.com/", target='_blank')
+                            i.fab.fa-twitter.nav__social-icon
+                        a.nav__circle(href="https://www.instagram.com/", target='_blank')
+                            i.fab.fa-instagram.nav__social-icon
+            

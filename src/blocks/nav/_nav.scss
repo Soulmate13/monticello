@@ -1,22 +1,60 @@
 .nav {
-    margin: 0 auto;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
 
-    &__para {
-        font-family: 'GothamMediumRegular' !important;
+
+    &__wrapper {
+        padding-top: 52px;
     }
-}
 
-.icons { 
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    stroke-width: 0;
-    stroke: black;
-    fill: black;
-}
+    &__link {
+        text-decoration: none;
+        display: inline-block;
+        color: #fff;
+    }
 
-.icon-monticello-logo {
-    width: 75px;
-    height: 25px;
-    color: black;
+    &__list {
+        height: 100%;
+        color: white;
+        font-family: 'GothamBook';
+        font-size: 14px;
+        font-weight: 300;
+        text-transform: uppercase;
+        padding-left: 4px;
+        
+    }
+
+
+    &__circle {
+        text-decoration: none;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px solid #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__circle:first-child:hover &__social-icon:first-child {
+        color: #4267B2;
+    }
+    
+    &__circle:nth-child(2):hover &__social-icon:first-child {
+        color: #1da1f2;
+    }
+
+    &__circle:nth-child(3):hover &__social-icon:first-child {
+        color: #8a3ab9;
+    }
+
+    &__social-icon {
+        font-size: 16px;
+        color: #fff;
+    }
+
 }

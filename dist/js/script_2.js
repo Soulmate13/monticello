@@ -6,7 +6,7 @@ $(() => {
             center: { lat: 40.665557, lng: -73.823681 },
             zoom: 16,
             mapTypeControl: false,
-            disableDefaultUI: true
+            disableDefaultUI: true,
         });
         // and other stuff...
     }

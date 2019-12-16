@@ -8,9 +8,9 @@ mixin news
                             hr.news__line
                             h2.news__title Latest News
                     .row
-                        .swiper-container
+                        .swiper-container.news__slider-container
                             .swiper-wrapper
-                                .swiper-slide
+                                .swiper-slide.news__slide
                                         .news__slide-top
                                             img.news__slide-img(src="../dist/img/news_1.png", alt="img")
                                             svg.icons.icons--news.news__slide-img--hover
@@ -23,7 +23,7 @@ mixin news
                                             .news__slide-subparagraph
                                                 h4.news__slide-subtitle Isaac Dunn
                                                 p.news__slide-date 09 Feb 2017
-                                .swiper-slide
+                                .swiper-slide.news__slide
                                     .news__slide
                                         .news__slide-top
                                             img.news__slide-img(src="../dist/img/news_2.png", alt="img")
@@ -37,7 +37,7 @@ mixin news
                                             .news__slide-subparagraph
                                                 h4.news__slide-subtitle Dominic Freeman
                                                 p.news__slide-date 24 Apr 2017
-                                .swiper-slide
+                                .swiper-slide.news__slide
                                     .news__slide
                                         .news__slide-top
                                             img.news__slide-img(src="../dist/img/news_3.png", alt="img")
@@ -51,7 +51,7 @@ mixin news
                                             .news__slide-subparagraph
                                                 h4.news__slide-subtitle Alice Ward
                                                 p.news__slide-date 30 Dec 2017
-                                .swiper-slide
+                                .swiper-slide.news__slide
                                     .news__slide
                                         .news__slide-top
                                             img.news__slide-img(src="../dist/img/news_1.png", alt="img")
@@ -65,7 +65,7 @@ mixin news
                                             .news__slide-subparagraph
                                                 h4.news__slide-subtitle Isaac Dunn
                                                 p.news__slide-date 09 Feb 2017
-                                .swiper-slide
+                                .swiper-slide.news__slide
                                     .news__slide
                                         .news__slide-top
                                             img.news__slide-img(src="../dist/img/news_2.png", alt="img")
@@ -79,10 +79,10 @@ mixin news
                                             .news__slide-subparagraph
                                                 h4.news__slide-subtitle Dominic Freeman
                                                 p.news__slide-date 24 Apr 2017
-                    .swiper-button-prev-go
-                        i.fas.fa-angle-left.button-arrow-left
-                    .swiper-button-next-go
-                        i.fas.fa-angle-right.button-arrow-left   
+                        .swiper-button-prev-go.news__slide-arrow-prev
+                            i.fas.fa-angle-left.news__slide-arrow
+                        .swiper-button-next-go.news__slide-arrow-next
+                            i.fas.fa-angle-right.news__slide-arrow   
                 .news__slide-utilities
-                    .swiper-pagination
+                    .swiper-pagination.news__slide-pagination
                                 
