@@ -7,10 +7,20 @@
     background-color: rgba($color: #fff, $alpha: 1.0);
     top: -300px;
     box-shadow: 0 -4px 30px rgba(133, 133, 133, 0.2);
+    z-index: 50;
 
     @media screen and (max-width: 1599px) {
         top: -300px;
-        
+    }
+
+    @media screen and (max-width: 991px) {
+        max-width: 100%;
+    }
+
+    @media screen and (max-width: 767px) {
+        max-height: 600px;
+        position: absolute;
+        top: 0;
     }
 
 
@@ -47,6 +57,11 @@
         text-transform: uppercase;
         margin-bottom: 60px;
         margin-left: -3px;
+
+        @media screen and (max-width: 575px) {
+            padding: 0 15px;
+            font-size: 35px;
+        }
     }
 
     &__link {
@@ -54,6 +69,17 @@
         display: inline-block;
         margin-left: 59px;
         margin-bottom: 38px;
+
+        @media screen and (max-width: 767px) {
+            margin: 0 0 20px 0;
+        }
+    }
+
+    &__link-info {
+
+        @media screen and (max-width: 767px) {
+            margin-bottom: 50px;
+        }
     }
 
     
@@ -80,6 +106,23 @@
         color: #2c4058;
     }
 
+    &__form {
+        margin-left: 15px;
+
+        @media screen and (max-width: 991px) {
+           margin-left: 0;
+        }
+
+        @media screen and (max-width: 767px) {
+            margin-bottom: 50px;
+        }
+
+        @media screen and (max-width: 575px) {
+            padding: 0 20px;
+        }
+
+    }
+
     &__input {
         max-width: 310px;
         border-bottom: 1px solid #2c4058;
@@ -90,6 +133,12 @@
         padding-bottom: 16px;
         font-family: 'GothamBook';
         font-size: 18px;
+
+        
+        
+        &:focus {
+            background-color:#f4f4f4;
+        }
     }
 
     &__input:first-child {
@@ -117,6 +166,10 @@
         text-decoration: none;
         margin-left: 170px;
         cursor: pointer;
+
+        @media screen and (max-width: 767px) {
+            margin: 0 auto;
+        }
     
         &:hover  {
             color: #fff;
