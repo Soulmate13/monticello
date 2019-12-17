@@ -149,6 +149,10 @@
     &__heart-icon {
         @media screen and (max-width: 767px) {
            padding-right: 5px;
+           text-decoration: none;
+        }
+        @media screen and (max-width: 575px) {
+            padding-right: 0px;
         }
     }
 

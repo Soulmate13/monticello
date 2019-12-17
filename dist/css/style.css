@@ -4172,7 +4172,11 @@ html {
     font-size: 14px; }
   @media screen and (max-width: 767px) {
     .footer__heart-icon {
-      padding-right: 5px; } }
+      padding-right: 5px;
+      text-decoration: none; } }
+  @media screen and (max-width: 575px) {
+    .footer__heart-icon {
+      padding-right: 0px; } }
   .footer__line {
     display: inline-block;
     width: 41px;
