@@ -1,5 +1,5 @@
 mixin contact
-    .contact
+    .contact(data-aos="flip-down")
         .contact__wrapper
             .row.no-gutters
                 .col-12
@@ -24,7 +24,7 @@ mixin contact
                     form.contact__form(action="" id='form').d-md-block.d-flex.flex-column.align-items-center
                         input.contact__input(type="text", name="text" id="text" placeholder='Your name' required)
                         input.contact__input(type="email", name="email", id="email" placeholder='Email' required)
-                        input.contact__submit(type="submit", value="submit")
+                        input.contact__submit(type="submit", value="submit", data-aos="zoom-in-right")
                         
         
 
