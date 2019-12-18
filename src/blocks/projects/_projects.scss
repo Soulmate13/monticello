@@ -11,10 +11,18 @@
 
     &__first {
         margin-bottom: 210px;
+
+        @media screen and (max-width: 767px) {
+            margin-bottom: 50px;
+        }
     }
 
     &__second {
         margin-bottom: 143px;
+
+        @media screen and (max-width: 767px) {
+            margin-bottom: 50px;
+        }
     }
 
     &__title {
@@ -24,7 +32,8 @@
         font-weight: 700;
         text-transform: uppercase;
         text-align: center;
-        margin-bottom: 164px;
+        margin-bottom: 165px;
+
     }
 
     &__img-wrapper {
@@ -42,6 +51,14 @@
             position: absolute;
             top: -70px;
             left: -214px;
+
+            @media screen and (max-width: 1599px) {
+                left: -3vw;
+            }
+
+            @media screen and (max-width: 575px) {
+                display: none;
+            }
         }
     }
 
@@ -49,9 +66,24 @@
 
         margin-left: 40px;
 
+        @media screen and (max-width: 1599px) {
+            margin-left: 0;
+        }
+
         &::before {
             background-color: #7e5aff;
             left: 260px;
+
+            @media screen and (max-width: 1599px) {
+                left: 6vw;
+            }
+            @media screen and (max-width: 1199px) {
+                left: -3vw;
+            }
+
+            @media screen and (max-width: 575px) {
+                display: none;
+            }
         }
     }
 
@@ -64,6 +96,10 @@
 
     &__info {
         padding-top: 56px;
+
+        @media screen and (max-width: 575px) {
+            text-align: center;
+        }
     }
 
     &__subtitle-top {
@@ -73,6 +109,8 @@
         font-size: 22px;
         font-weight: 300;
         margin-bottom: 7px;
+
+        
     }
 
     &__subtitle-bottom {
@@ -82,6 +120,7 @@
         font-size: 44px;
         font-weight: 700;
         margin-bottom: 26px;
+
     }
 
     &__paragraph {
@@ -92,6 +131,7 @@
         line-height: 30px;
         letter-spacing: 0.1px;
         margin-bottom: 51px;
+
     }
 
     &__link {
@@ -102,10 +142,16 @@
     &__icon {
         color: #2c4058;
         font-size: 15px;
+        margin-left: -1px;
+
+        @media screen and (max-width: 575px) {
+            margin-bottom: 15px;
+        }
     }
 
     &__btn-wrapper {
         margin-bottom: 75px;
+
     }
 
     &__details {
@@ -115,6 +161,11 @@
         font-size: 18px;
         font-family: 'Open Sans', sans-serif;
         font-style: italic;
+        margin-left: 4px;
+
+        @media screen and (max-width: 575px) {
+            padding: 0 10px;
+        }
     }
 
     &__link:hover &__icon {

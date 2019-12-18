@@ -3559,9 +3559,15 @@ html {
 
 .projects__first {
   margin-bottom: 210px; }
+  @media screen and (max-width: 767px) {
+    .projects__first {
+      margin-bottom: 50px; } }
 
 .projects__second {
   margin-bottom: 143px; }
+  @media screen and (max-width: 767px) {
+    .projects__second {
+      margin-bottom: 50px; } }
 
 .projects__title {
   color: #2c4058;
@@ -3570,7 +3576,7 @@ html {
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 164px; }
+  margin-bottom: 165px; }
 
 .projects__img-wrapper {
   background-color: #2c4058;
@@ -3586,12 +3592,30 @@ html {
     position: absolute;
     top: -70px;
     left: -214px; }
+    @media screen and (max-width: 1599px) {
+      .projects__img-wrapper::before {
+        left: -3vw; } }
+    @media screen and (max-width: 575px) {
+      .projects__img-wrapper::before {
+        display: none; } }
 
 .projects__img-wrapper--right {
   margin-left: 40px; }
+  @media screen and (max-width: 1599px) {
+    .projects__img-wrapper--right {
+      margin-left: 0; } }
   .projects__img-wrapper--right::before {
     background-color: #7e5aff;
     left: 260px; }
+    @media screen and (max-width: 1599px) {
+      .projects__img-wrapper--right::before {
+        left: 6vw; } }
+    @media screen and (max-width: 1199px) {
+      .projects__img-wrapper--right::before {
+        left: -3vw; } }
+    @media screen and (max-width: 575px) {
+      .projects__img-wrapper--right::before {
+        display: none; } }
 
 .projects__img {
   max-width: 100%;
@@ -3601,6 +3625,9 @@ html {
 
 .projects__info {
   padding-top: 56px; }
+  @media screen and (max-width: 575px) {
+    .projects__info {
+      text-align: center; } }
 
 .projects__subtitle-top {
   color: #2c4058;
@@ -3633,7 +3660,11 @@ html {
 
 .projects__icon {
   color: #2c4058;
-  font-size: 15px; }
+  font-size: 15px;
+  margin-left: -1px; }
+  @media screen and (max-width: 575px) {
+    .projects__icon {
+      margin-bottom: 15px; } }
 
 .projects__btn-wrapper {
   margin-bottom: 75px; }
@@ -3644,7 +3675,11 @@ html {
   color: #2c4058;
   font-size: 18px;
   font-family: 'Open Sans', sans-serif;
-  font-style: italic; }
+  font-style: italic;
+  margin-left: 4px; }
+  @media screen and (max-width: 575px) {
+    .projects__details {
+      padding: 0 10px; } }
 
 .projects__link:hover .projects__icon {
   color: #2c4058; }
