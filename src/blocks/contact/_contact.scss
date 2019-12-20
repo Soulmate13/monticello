@@ -1,7 +1,7 @@
 .contact {
     position: absolute;
     max-width: 770px;
-    max-height: 450px;
+    max-height: 449px;
     height: 100%;
     width: 100%;
     background-color: rgba($color: #fff, $alpha: 1.0);
@@ -44,7 +44,7 @@
     &__line {
         max-width: 100px;
         background-color: #2c4058;
-        margin-bottom: 35px;
+        margin-bottom: 33px;
     }
 
     &__title {
@@ -89,6 +89,10 @@
         font-weight: 300;
         display: inline-block;
         letter-spacing: -1px;
+    }
+
+    &__link:nth-child(3) > &__info {
+        letter-spacing: -1.3px;
     }
     
     &__icon {
