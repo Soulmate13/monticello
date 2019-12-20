@@ -16,24 +16,42 @@ $(document).ready(function () {
             nextEl: '.news__slide-arrow-next',
             prevEl: '.news__slide-arrow-prev',
         },
-        // autoplay: {
-        //     delay: 4000,
-        // },
+        autoplay: {
+            delay: 4000,
+        },
+        parallax: true,
         breakpoints: {
-            // when window width is >= 320px
             1200: {
-                slidesPerView: 3,
-                spaceBetween: 30
+                spaceBetween: 30,
+                slidesPerView: 3
             },
+
+            991: {
+                slidesOffsetBefore: 0,
+                slidesOffsetAfter: 0,
+                centeredSlides: true,
+                slidesOffsetBefore: 100,
+                spaceBetween: 30,
+                slidesPerView: 3,
+            },
+
             768: {
+                slidesOffsetBefore: 20,
+                slidesOffsetAfter: 20,
                 slidesPerView: 2,
                 spaceBetween: 40
             },
+
             576: {
-                slidesPerView: 1
+                slidesPerView: 2,
+                spaceBetween: 40
             },
             319: {
-                slidesPerView: 1
+                centeredSlides: true,
+                slidesOffsetBefore: 150,
+                slidesOffsetAfter: 0,
+                slidesPerView: 2,
+                spaceBetween: 10,
             }
         }
     });

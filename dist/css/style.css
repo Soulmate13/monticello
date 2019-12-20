@@ -3449,6 +3449,29 @@ html {
   width: 100%; }
   .nav__wrapper {
     padding-top: 52px; }
+  .nav__item {
+    position: relative; }
+    .nav__item::before {
+      top: 1px;
+      position: absolute;
+      left: -24px;
+      content: '';
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background-color: transparent;
+      border: 1px solid #fff; }
+  .nav__item:nth-child(1)::before {
+    top: 1px;
+    position: absolute;
+    left: -24px;
+    content: '';
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: #fff; }
+  .nav__item:nth-child(3) {
+    margin-right: 34px; }
   .nav__link {
     text-decoration: none;
     display: inline-block;
@@ -3460,7 +3483,11 @@ html {
     font-size: 14px;
     font-weight: 300;
     text-transform: uppercase;
-    padding-left: 4px; }
+    padding-left: 9px; }
+  .nav__socials {
+    max-width: 162px;
+    width: 100%;
+    margin-left: 9px; }
   .nav__circle {
     text-decoration: none;
     width: 40px;
@@ -3498,27 +3525,53 @@ html {
   .header__slide {
     max-width: 100%;
     max-height: 100%;
-    position: relative; }
-  .header__slide-img {
-    width: 100%; }
+    position: relative;
+    background-image: url(../../dist/img/header_background.png);
+    background-repeat: no-repeat;
+    z-index: 100;
+    background-size: fill; }
   .header__slide-text {
     position: absolute;
     top: 359px; }
+    @media screen and (max-width: 991px) {
+      .header__slide-text {
+        text-align: center;
+        padding: 0 25px;
+        top: 300px; } }
+    @media screen and (max-width: 405px) {
+      .header__slide-text {
+        text-align: center;
+        padding: 0 50px;
+        top: 300px; } }
   .header__slide-title {
     color: white;
     font-family: 'gothambold1';
     font-size: 80px;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 3.3px;
-    margin-bottom: 27px; }
+    letter-spacing: 4.1px;
+    margin-bottom: 27px;
+    margin-left: 10px; }
+    @media screen and (max-width: 575px) {
+      .header__slide-title {
+        font-size: 60px; } }
+    @media screen and (max-width: 405px) {
+      .header__slide-title {
+        font-size: 40px; } }
   .header__slide-subtitle {
     color: white;
     font-family: 'GothamBook';
     font-size: 18px;
     font-weight: 300;
     text-transform: uppercase;
-    letter-spacing: 5.2px; }
+    letter-spacing: 5.4px;
+    margin-left: 8px; }
+    @media screen and (max-width: 575px) {
+      .header__slide-subtitle {
+        letter-spacing: 3px; } }
+    @media screen and (max-width: 405px) {
+      .header__slide-subtitle {
+        font-size: 16px; } }
   .header__slide-pagination {
     margin-right: 30px;
     max-height: 218px;
@@ -3723,13 +3776,31 @@ html {
     height: 100%;
     margin-bottom: 58px;
     position: relative; }
+    @media screen and (max-width: 1199px) {
+      .news__slider-container {
+        max-width: 100%;
+        max-height: 100%;
+        padding: 0 50px; } }
+    @media screen and (max-width: 767px) {
+      .news__slider-container {
+        max-width: 90%;
+        max-height: 100%;
+        padding: 0 33px; } }
+    @media screen and (max-width: 575px) {
+      .news__slider-container {
+        max-width: 100%;
+        max-height: 100%;
+        padding: 0 10px; } }
   .news__slide {
     -webkit-transition: -webkit-box-shadow .3s;
     transition: -webkit-box-shadow .3s;
     -o-transition: box-shadow .3s;
     transition: box-shadow .3s;
     transition: box-shadow .3s, -webkit-box-shadow .3s;
-    max-width: 370px; }
+    max-width: 370px;
+    height: 514px;
+    max-height: 100%;
+    background-color: #fff; }
     .news__slide:hover {
       cursor: pointer;
       -webkit-box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.5);
@@ -3747,18 +3818,17 @@ html {
     align-items: center;
     max-width: 370px; }
   .news__slide-img {
-    max-width: 370px;
+    max-width: 100%;
     max-height: 100%;
     position: relative;
-    z-index: 1; }
+    z-index: 1;
+    width: 100%; }
   .news__slide-img:hover + .news__slide-img--hover {
     z-index: 2; }
   .news__slide-middle {
     background-color: #fff;
     padding-left: 20px;
-    max-width: 370px;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box; }
+    max-width: 370px; }
   .news__slide-heading {
     padding-top: 22px;
     color: #2c4058;
@@ -3770,15 +3840,28 @@ html {
     line-height: 33px;
     letter-spacing: 0.3px;
     padding-right: 17px; }
+    @media screen and (max-width: 1199px) {
+      .news__slide-heading {
+        padding-right: 3px; } }
+    @media screen and (max-width: 767px) {
+      .news__slide-heading {
+        padding-top: 10px;
+        padding-bottom: 20px; } }
   .news__slide-paragraph {
     color: #4b5562;
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     font-weight: 400;
     padding-right: 21px;
-    padding-bottom: 32px;
     line-height: 29px;
-    letter-spacing: -0.1px; }
+    letter-spacing: -0.1px;
+    height: 100%;
+    max-height: 90px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+    @media screen and (max-width: 767px) {
+      .news__slide-paragraph {
+        margin-bottom: 20px; } }
   .news__slide-bottom {
     background-color: #fff;
     padding-left: 20px;
@@ -3843,6 +3926,16 @@ html {
     right: 114px;
     bottom: 445px;
     z-index: 2; }
+    @media screen and (max-width: 1599px) {
+      .news__slide-arrow-next {
+        right: 52px;
+        width: 60px;
+        height: 60px;
+        border: 1px solid #000;
+        background-color: #000; } }
+    @media screen and (max-width: 767px) {
+      .news__slide-arrow-next {
+        display: none; } }
     .news__slide-arrow-next:hover {
       cursor: pointer;
       opacity: 1; }
@@ -3865,12 +3958,26 @@ html {
     left: 116px;
     bottom: 445px;
     z-index: 2; }
+    @media screen and (max-width: 1599px) {
+      .news__slide-arrow-prev {
+        width: 60px;
+        height: 60px;
+        border: 1px solid #000;
+        background-color: #000;
+        left: 50px; } }
+    @media screen and (max-width: 767px) {
+      .news__slide-arrow-prev {
+        display: none; } }
     .news__slide-arrow-prev:hover {
       cursor: pointer;
       opacity: 1; }
   .news__slide-arrow {
     font-size: 14px;
     color: #fff; }
+    @media screen and (max-width: 1599px) {
+      .news__slide-arrow {
+        color: #fff;
+        font-size: 30px; } }
 
 .swiper-pagination-bullet {
   width: 9px;
