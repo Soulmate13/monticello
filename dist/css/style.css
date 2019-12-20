@@ -3873,11 +3873,11 @@ html {
     height: 60px;
     border-radius: 50%;
     background-color: #2c4058;
-    background: url(/dist/img/news_photo_1.png); }
+    background: url(../dist/img/news_photo_1.png); }
     .news__slide-photo--second {
-      background: url(/dist/img/news_photo_2.png); }
+      background: url(../dist/img/news_photo_2.png); }
     .news__slide-photo--third {
-      background: url(/dist/img/news_photo_3.png); }
+      background: url(../dist/img/news_photo_3.png); }
   .news__slide-subparagraph {
     margin-left: 19px;
     margin-top: 9px;
