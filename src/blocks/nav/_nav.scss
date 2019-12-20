@@ -43,6 +43,10 @@
 
     &__item:nth-child(3) {
         margin-right: 34px;
+        
+        @media screen and (max-width: 1598px) {
+            margin-right: 0;
+        } 
     }
 
 
@@ -54,6 +58,13 @@
         
     }
 
+
+    &__list-wrapper {
+        @media screen and (max-width: 991px) {
+            display: none;
+        }
+    }
+
     &__list {
         height: 100%;
         color: white;
@@ -61,13 +72,32 @@
         font-size: 14px;
         font-weight: 300;
         text-transform: uppercase;
-        padding-left: 9px;      
+        padding-left: 9px;
+
+
+        @media screen and (max-width: 1598px) {
+            padding-left: 0px;
+        }
+    
     }
 
     &__socials {
         max-width: 162px;
         width: 100%;
         margin-left: 9px;
+
+        &--small {
+            max-width: 162px;
+            width: 100%;
+        }
+
+        @media screen and (max-width: 1598px) {
+            margin-left: 0px;
+        } 
+
+        @media screen and (max-width: 575px) {
+            display: none !important;
+        } 
     }
 
 

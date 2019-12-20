@@ -3472,10 +3472,16 @@ html {
     background-color: #fff; }
   .nav__item:nth-child(3) {
     margin-right: 34px; }
+    @media screen and (max-width: 1598px) {
+      .nav__item:nth-child(3) {
+        margin-right: 0; } }
   .nav__link {
     text-decoration: none;
     display: inline-block;
     color: #fff; }
+  @media screen and (max-width: 991px) {
+    .nav__list-wrapper {
+      display: none; } }
   .nav__list {
     height: 100%;
     color: white;
@@ -3484,10 +3490,22 @@ html {
     font-weight: 300;
     text-transform: uppercase;
     padding-left: 9px; }
+    @media screen and (max-width: 1598px) {
+      .nav__list {
+        padding-left: 0px; } }
   .nav__socials {
     max-width: 162px;
     width: 100%;
     margin-left: 9px; }
+    .nav__socials--small {
+      max-width: 162px;
+      width: 100%; }
+    @media screen and (max-width: 1598px) {
+      .nav__socials {
+        margin-left: 0px; } }
+    @media screen and (max-width: 575px) {
+      .nav__socials {
+        display: none !important; } }
   .nav__circle {
     text-decoration: none;
     width: 40px;
