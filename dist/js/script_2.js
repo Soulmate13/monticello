@@ -172,4 +172,11 @@ $(() => {
         // and other stuff...
     }
     initMap();
+
+    let burger = document.getElementById("burger").addEventListener("click", ToggleWidth)
+
+    function ToggleWidth() {
+        document.getElementById("navigation").classList.toggle("nav__active");
+    }
+
 })

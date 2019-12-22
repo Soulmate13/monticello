@@ -17,4 +17,15 @@
         height: 57px;
     }
 
+    &--nav {
+        color: #fff;
+        width: 240px;
+        height: 57px;
+
+        @media screen and (max-width: 376px) {
+            width: 200px;
+        }
+    }
+
+
   }
