@@ -56,9 +56,22 @@ $(document).ready(function () {
         }
     });
 
+
+
+});
+
+$(document).ready(function () {
     AOS.init();
+});
 
+$(document).ready(function () {
 
+    $('a[href*="#"]').on('click', function (e) {
+        e.preventDefault()
+
+        $('html,body').animate({ scrollTop: $(this.hash).offset().top },
+            Math.pow(Math.abs(window.scrollY - $(this.hash).offset().top), 2 / 3) * 5);
+    })
 
 });
 

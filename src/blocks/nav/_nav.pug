@@ -24,27 +24,27 @@ mixin nav
                                 i.fab.fa-instagram.nav__social-icon
                         ul.nav__list#navigation.d-lg-none.d-flex
                             li.nav__item 
-                                a.nav__link(href=`#`) About us
+                                a.nav__link(href=`#about`) About us
                             li.nav__item 
-                                a.nav__link(href=`#`) Projects
+                                a.nav__link(href=`#projects`) Projects
                             li.nav__item
-                                a.nav__link(href=`#`) News
+                                a.nav__link(href=`#news`) News
                             li.nav__item 
-                                a.nav__link(href=`#`) Contact
-                        a.nav__btn#burger(href="javascript:void(0);")
-                            i.fas.fa-bars.nav__btn-icon
+                                a.nav__link(href=`#contact`) Contact
+                        //- a.nav__btn#burger(href="javascript:void(0);")
+                        //-     i.fas.fa-bars.nav__btn-icon
+                        .nav__btn#burger
+                            .nav__btn-element
                     .col-lg-7.no-gutters.order-xl-2.order-3.d-lg-block.d-none
                             ul.nav__list
                                 li.nav__item 
-                                    a.nav__link(href=`#`) About us
+                                    a.nav__link(href=`#about`) About us
                                 li.nav__item 
-                                    a.nav__link(href=`#`) Projects
+                                    a.nav__link(href=`#projects`) Projects
                                 li.nav__item
-                                    a.nav__link(href=`#`) News
+                                    a.nav__link(href=`#news`) News
                                 li.nav__item 
-                                    a.nav__link(href=`#`) Contact
-                            a.nav__btn#burger(href="javascript:void(0);")
-                                i.fas.fa-bars.nav__btn-icon
+                                    a.nav__link(href=`#contact`) Contact
                     .col-lg-2.d-lg-flex.d-none.order-xl-3
                         .nav__socials.d-flex.justify-content-between.align-items-center
                             a.nav__circle(href="https://www.facebook.com/", target='_blank')

@@ -173,10 +173,20 @@ $(() => {
     }
     initMap();
 
-    let burger = document.getElementById("burger").addEventListener("click", ToggleWidth)
+})
+
+$(document).ready(function () {
+    document.getElementById("burger").addEventListener("click", ToggleWidth)
 
     function ToggleWidth() {
         document.getElementById("navigation").classList.toggle("nav__active");
     }
+});
 
-})
+$(document).ready(function () {
+    document.getElementById("burger").addEventListener("click", TransformButton)
+
+    function TransformButton() {
+        document.querySelector('.nav__btn-element').classList.toggle("nav__btn-element--active")
+    }
+});
