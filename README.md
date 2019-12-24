@@ -10,6 +10,6 @@
   * Reset.css
   * Fancyapp
   * Swiper
-  * Prepros
+  * Gulp
 
 
