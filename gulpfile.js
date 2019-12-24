@@ -20,8 +20,8 @@ function css() {
         .pipe(sourcemaps.init())
         .pipe(sass())
         .pipe(postcss([autoprefixer()]))
-        .pipe(sourcemaps.write('./'))
         .pipe(csso())
+        .pipe(sourcemaps.write('./'))
         .pipe(dest('./dist/css'));
 }
 
