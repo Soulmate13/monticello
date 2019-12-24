@@ -1,3 +1,4 @@
+const bs = require("browser-sync").create();
 const { src, dest, parallel, watch } = require('gulp');
 const pug = require('gulp-pug');
 const sass = require('gulp-sass');
@@ -12,7 +13,7 @@ sass.compiler = require('node-sass');
 function html() {
     return src('./src/pug/index.pug')
         .pipe(pug())
-        .pipe(dest('./dist'));
+        .pipe(dest('./dist/'));
 }
 
 function css() {
@@ -22,16 +23,24 @@ function css() {
         .pipe(postcss([autoprefixer()]))
         .pipe(csso())
         .pipe(sourcemaps.write('./'))
-        .pipe(dest('./dist/css'));
+        .pipe(dest('./dist/css/'));
 }
-
-watch(['./src/pug/*.pug', './src/**/*/.scss'], function () {
-    pug();
-    scss();
-});
 
 
 exports.html = html;
 exports.css = css;
-exports.default = parallel(css, html);
-exports.watch = watch;
+exports.default = function () {
+    bs.init({
+        server: "./dist"
+    });
+
+    html();
+    css();
+
+    watch(['./src/**/*.pug', './src/**/*/.scss'], function () {
+        html();
+        css();
+        bs.reload();
+        done();
+    });
+};
