@@ -1,6 +1,15 @@
 .projects {
     &__wrapper {
         padding-top: 88px;
+
+        @media screen and (max-width: 1199px) {
+            padding-top: 50px;
+        }
+
+        @media screen and (max-width: 575px) {
+            padding-top: 25px;
+        }
+       
     }
 
     &__line {
@@ -12,9 +21,18 @@
     &__first {
         margin-bottom: 210px;
 
+        @media screen and (max-width: 1199px) {
+            margin-bottom: 100px;
+        }
+
         @media screen and (max-width: 767px) {
             margin-bottom: 50px;
         }
+
+        @media screen and (max-width: 575px) {
+            margin-bottom: 50px;
+        }
+
     }
 
     &__second {
@@ -33,6 +51,15 @@
         text-transform: uppercase;
         text-align: center;
         margin-bottom: 165px;
+
+        @media screen and (max-width: 1199px) {
+            margin-bottom: 100px;
+        }
+
+        @media screen and (max-width: 575px) {
+            margin-bottom: 50px;
+            font-size: 35px;
+        }
 
     }
 
@@ -109,7 +136,6 @@
         font-size: 22px;
         font-weight: 300;
         margin-bottom: 7px;
-
         
     }
 
@@ -120,6 +146,10 @@
         font-size: 44px;
         font-weight: 700;
         margin-bottom: 26px;
+
+        @media screen and (max-width: 575px) {
+            font-size: 35px;
+        }
 
     }
 

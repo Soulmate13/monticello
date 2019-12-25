@@ -37,7 +37,7 @@ exports.default = function () {
     html();
     css();
 
-    watch(['./src/**/*.pug', './src/**/*/.scss'], function () {
+    watch(['./src/**/*.pug', './src/**/*.scss'], function () {
         html();
         css();
         bs.reload();

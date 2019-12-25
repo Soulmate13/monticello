@@ -71,6 +71,13 @@ $(document).ready(function () {
 
         $('html,body').animate({ scrollTop: $(this.hash).offset().top },
             Math.pow(Math.abs(window.scrollY - $(this.hash).offset().top), 2 / 3) * 5);
+
+        if (window.matchMedia('(max-width: 991px)').matches) {
+            $('#navigation').toggleClass("nav__active");
+            $('.nav__btn-element').toggleClass('nav__btn-element--active');
+        }
+
+
     })
 
 });

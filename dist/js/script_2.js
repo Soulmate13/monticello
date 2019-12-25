@@ -176,15 +176,15 @@ $(() => {
 })
 
 $(document).ready(function () {
-    document.getElementById("burger").addEventListener("click", ToggleWidth)
+    document.getElementById("burger").addEventListener("click", ToggleHeight);
 
-    function ToggleWidth() {
+    function ToggleHeight() {
         document.getElementById("navigation").classList.toggle("nav__active");
     }
 });
 
 $(document).ready(function () {
-    document.getElementById("burger").addEventListener("click", TransformButton)
+    document.getElementById("burger").addEventListener("click", TransformButton);
 
     function TransformButton() {
         document.querySelector('.nav__btn-element').classList.toggle("nav__btn-element--active")

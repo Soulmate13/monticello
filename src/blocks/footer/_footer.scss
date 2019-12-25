@@ -54,6 +54,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        transition: 0.2s ease-in;
+
 
         @media screen and (max-width: 767px) {
             width: 48px;
@@ -63,16 +65,13 @@
 
     &__circle:first-child:hover {
         background-color: #fff;
-        transition: 0.5 ease-in;
     }
 
     &__circle:nth-child(2):hover {
         background-color: #fff;
-        transition: 0.5 ease-in;
     }
     &__circle:nth-child(3):hover {
         background-color: #fff;
-        transition: 0.5 ease-in;
     }
     
     &__circle:first-child:hover &__social-icon:first-child{
