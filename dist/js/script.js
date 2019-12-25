@@ -27,31 +27,32 @@ $(document).ready(function () {
             },
 
             991: {
-                slidesOffsetBefore: 0,
                 slidesOffsetAfter: 0,
-                centeredSlides: true,
-                slidesOffsetBefore: 100,
+                slidesOffsetBefore: 0,
                 spaceBetween: 30,
-                slidesPerView: 3,
+                slidesPerView: 2,
             },
 
             768: {
-                slidesOffsetBefore: 20,
-                slidesOffsetAfter: 20,
+                slidesOffsetBefore: 0,
+                slidesOffsetAfter: 0,
                 slidesPerView: 2,
                 spaceBetween: 40
             },
 
             576: {
-                slidesPerView: 2,
-                spaceBetween: 40
+                centeredSlides: true,
+                slidesOffsetBefore: 0,
+                slidesOffsetAfter: 0,
+                slidesPerView: 1,
+                spaceBetween: 10
             },
             319: {
                 centeredSlides: true,
-                slidesOffsetBefore: 150,
+                slidesOffsetBefore: 0,
                 slidesOffsetAfter: 0,
-                slidesPerView: 2,
-                spaceBetween: 10,
+                slidesPerView: 1,
+                spaceBetween: 20,
             }
         }
     });

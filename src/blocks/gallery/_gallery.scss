@@ -2,6 +2,14 @@
     &__wrapper {
         padding-top: 130px;
 
+        @media screen and (max-width: 1199px) {
+            padding-top: 100px;
+        }
+
+        @media screen and (max-width: 991px) {
+            padding-top: 75px;
+        }
+
         @media screen and (max-width: 575px) {
             padding-top: 75px;
         }
@@ -21,10 +29,23 @@
         font-weight: 500;
         text-transform: uppercase;
         margin-bottom: 93px;
+
+        @media screen and (max-width: 1199px) {
+            margin-bottom: 75px;
+        }
+
+        @media screen and (max-width: 575px) {
+            margin-bottom: 50px;
+            font-size: 35px;
+        }
     }
 
     &__panel {
         margin-bottom: 68px;
+
+        @media screen and (max-width: 575px) {
+            margin-bottom: 50px;
+        }
     }
 
     &__item {

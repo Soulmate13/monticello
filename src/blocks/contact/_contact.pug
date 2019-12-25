@@ -1,5 +1,5 @@
 mixin contact
-    .contact#contact
+    .contact#contact(data-aos="flip-up")
         .contact__wrapper
             .row.no-gutters
                 .col-12
@@ -17,7 +17,7 @@ mixin contact
                         a.contact__link(href="mailto:gahuy93@gmail.com", target="_blank")
                             i.fas.fa-inbox.contact__icon
                             p.contact__info gahuy93@gmail.com
-                        a.contact__link(href="tel:+001-356-868-2454", target="_blank")
+                        .contact__link
                             i.fas.fa-clock.contact__icon
                             p.contact__info From 07:05AM to 19:30PM
                 .col-md-6.col-sm-12.col-12.order-md-2.order-1
