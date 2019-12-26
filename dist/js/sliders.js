@@ -1,6 +1,26 @@
 $(document).ready(function () {
     console.log("ready!");
 
+    let mySwiperHeader = new Swiper('.header__slider-container', {
+        speed: 700,
+        slidesPerView: 1,
+        loop: true,
+        direction: 'vertical',
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+            clickable: true
+        },
+        autoplay: {
+            delay: 4000,
+        }
+    });
+
+});
+
+$(document).ready(function () {
+    console.log("ready!");
+
     let mySwiper = new Swiper('.news__slider-container', {
         speed: 500,
         spaceBetween: 30,
@@ -57,29 +77,4 @@ $(document).ready(function () {
         }
     });
 
-
-
 });
-
-$(document).ready(function () {
-    AOS.init();
-});
-
-$(document).ready(function () {
-
-    $('a[href*="#"]').on('click', function (e) {
-        e.preventDefault()
-
-        $('html,body').animate({ scrollTop: $(this.hash).offset().top },
-            Math.pow(Math.abs(window.scrollY - $(this.hash).offset().top), 2 / 3) * 5);
-
-        if (window.matchMedia('(max-width: 991px)').matches) {
-            $('#navigation').toggleClass("nav__active");
-            $('.nav__btn-element').toggleClass('nav__btn-element--active');
-        }
-
-
-    })
-
-});
-
