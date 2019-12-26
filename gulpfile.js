@@ -32,10 +32,10 @@ function js() {
         .pipe(
             webpack_gulp({
                 entry: './src/js/burger.js',
-                mode: 'production'
+                mode: 'development'
             })
         )
-        .pipe(dest('./dist/js'));
+        .pipe(gulp.dest('./dist/js'));
 };
 
 
