@@ -35,7 +35,7 @@ function js() {
                 mode: 'development'
             })
         )
-        .pipe(dest('dist/js'));
+        .pipe(gulp.dest('dist/js'));
 };
 
 
