@@ -28,14 +28,14 @@ function css() {
 
 function js() {
     return gulp
-        .src('./src/js/burger.js')
+        .src(['./src/**/*.js'])
         .pipe(
             webpack_gulp({
-                entry: './src/js/burger.js',
+                entry: './src/js/script.js',
                 mode: 'development'
             })
         )
-        .pipe(gulp.dest('./dist/js'));
+        .pipe(dest('dist/js'));
 };
 
 

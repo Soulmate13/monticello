@@ -1,3 +1,5 @@
+export default { mySwiper, mySwiperHeader };
+
 $(document).ready(function () {
     console.log("ready!");
 
