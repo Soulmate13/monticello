@@ -1,12 +1,12 @@
 const bs = require("browser-sync").create();
-const { src, dest, parallel, watch } = require('gulp');
+const { src, dest, watch } = require('gulp');
 const pug = require('gulp-pug');
 const sass = require('gulp-sass');
 const sourcemaps = require('gulp-sourcemaps');
 const csso = require('gulp-csso');
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
-
+const webpack_gulp = require('gulp-webpack-bundler');
 
 sass.compiler = require('node-sass');
 
@@ -26,7 +26,20 @@ function css() {
         .pipe(dest('./dist/css/'));
 }
 
+function js() {
+    return gulp
+        .src('./src/js/burger.js')
+        .pipe(
+            webpack_gulp({
+                entry: './src/js/burger.js',
+                mode: 'production'
+            })
+        )
+        .pipe(dest('./dist/js'));
+};
 
+
+exports.js = js;
 exports.html = html;
 exports.css = css;
 exports.default = function () {

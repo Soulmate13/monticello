@@ -25,6 +25,7 @@
     "gulp-pug": "^4.0.1",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
+    "gulp-webpack-bundler": "^1.0.3",
     "live-server": "^1.2.1",
     "node-sass": "^4.13.0"
   }
