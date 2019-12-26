@@ -16,7 +16,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
 
-    $('a[href*="#"]').on('click', function (e) {
+    $('a[href*="#"]').not('.header__circle').on('click', function (e) {
         e.preventDefault()
 
         $('html,body').animate({ scrollTop: $(this.hash).offset().top },
@@ -29,6 +29,16 @@ $(document).ready(function () {
 
     })
 
+});
+
+$(document).ready(function () {
+
+    $('.header__circle').on('click', function (e) {
+        e.preventDefault()
+
+        $('html,body').animate({ scrollTop: $(this.hash).offset().top },
+            Math.pow(Math.abs(window.scrollY - $(this.hash).offset().top), 2 / 3) * 5);
+    })
 });
 
 
