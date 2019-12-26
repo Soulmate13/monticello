@@ -1,192 +1,34 @@
-function initMap() { } // now it IS a function and it is in global
-$(() => {
-    initMap = function () {
-        // your code like...
-        map = new google.maps.Map(document.getElementById('map'), {
-            center: { lat: 40.665557, lng: -73.823681 },
-            zoom: 16,
-            mapTypeControl: false,
-            disableDefaultUI: true,
-            styles: [
-                {
-                    "elementType": "geometry",
-                    "stylers": [
-                        {
-                            "color": "#f5f5f5"
-                        }
-                    ]
-                },
-                {
-                    "elementType": "labels.icon",
-                    "stylers": [
-                        {
-                            "visibility": "off"
-                        }
-                    ]
-                },
-                {
-                    "elementType": "labels.text.fill",
-                    "stylers": [
-                        {
-                            "color": "#616161"
-                        }
-                    ]
-                },
-                {
-                    "elementType": "labels.text.stroke",
-                    "stylers": [
-                        {
-                            "color": "#f5f5f5"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "administrative.land_parcel",
-                    "elementType": "labels.text.fill",
-                    "stylers": [
-                        {
-                            "color": "#bdbdbd"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "poi",
-                    "elementType": "geometry",
-                    "stylers": [
-                        {
-                            "color": "#eeeeee"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "poi",
-                    "elementType": "labels.text.fill",
-                    "stylers": [
-                        {
-                            "color": "#757575"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "poi.park",
-                    "elementType": "geometry",
-                    "stylers": [
-                        {
-                            "color": "#e5e5e5"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "poi.park",
-                    "elementType": "labels.text.fill",
-                    "stylers": [
-                        {
-                            "color": "#9e9e9e"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "road",
-                    "elementType": "geometry",
-                    "stylers": [
-                        {
-                            "color": "#ffffff"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "road.arterial",
-                    "elementType": "labels.text.fill",
-                    "stylers": [
-                        {
-                            "color": "#757575"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "road.highway",
-                    "elementType": "geometry",
-                    "stylers": [
-                        {
-                            "color": "#dadada"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "road.highway",
-                    "elementType": "labels.text.fill",
-                    "stylers": [
-                        {
-                            "color": "#616161"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "road.local",
-                    "elementType": "labels.text.fill",
-                    "stylers": [
-                        {
-                            "color": "#9e9e9e"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "transit.line",
-                    "elementType": "geometry",
-                    "stylers": [
-                        {
-                            "color": "#e5e5e5"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "transit.station",
-                    "elementType": "geometry",
-                    "stylers": [
-                        {
-                            "color": "#eeeeee"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "water",
-                    "elementType": "geometry",
-                    "stylers": [
-                        {
-                            "color": "#c9c9c9"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "water",
-                    "elementType": "labels.text.fill",
-                    "stylers": [
-                        {
-                            "color": "#9e9e9e"
-                        }
-                    ]
-                }
-            ]
+let mymap = L.map('map').setView([40.66839, -73.8224], 17);
 
-        });
-        // and other stuff...
-    }
-    initMap();
+L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    maxZoom: 18,
+    id: 'mapbox/light-v10',
+    accessToken: 'pk.eyJ1Ijoic291bG1hdGUxMyIsImEiOiJjazRtbGZmMGEwMmZyM3FtaGR4MXZ1d3dqIn0.pfD64vHQTGtaioJZfICvDw',
+    dragging: true,
+}).addTo(mymap);
 
-})
+let circle = L.circle([40.6699, -73.82328], {
+    color: 'white',
+    fillColor: '#fff',
+    fillOpacity: 0.3,
+    radius: 50,
+}).addTo(mymap);
 
-$(document).ready(function () {
-    document.getElementById("burger").addEventListener("click", ToggleHeight);
+let circletwo = L.circle([40.6699, -73.82328], {
+    color: 'white',
+    fillColor: '#fff',
+    fillOpacity: 0.8,
+    radius: 30,
+}).addTo(mymap);
 
-    function ToggleHeight() {
-        document.getElementById("navigation").classList.toggle("nav__active");
-    }
-});
+let circlethree = L.circle([40.6699, -73.82328], {
+    color: '#7e5aff',
+    fillColor: '#7e5aff',
+    fillOpacity: 1,
+    radius: 6,
+}).addTo(mymap);
 
-$(document).ready(function () {
-    document.getElementById("burger").addEventListener("click", TransformButton);
-
-    function TransformButton() {
-        document.querySelector('.nav__btn-element').classList.toggle("nav__btn-element--active")
-    }
-});
+circle.bindPopup("Hello!");
+circletwo.bindPopup("Hello!");
+circlethree.bindPopup("Hello!");
