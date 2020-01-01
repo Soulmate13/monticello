@@ -6,7 +6,12 @@ const sourcemaps = require('gulp-sourcemaps');
 const csso = require('gulp-csso');
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
-const webpack_gulp = require('gulp-webpack-bundler');
+const webpack = require('webpack-stream');
+const webp = require('gulp-webp');
+const imagemin = require('gulp-imagemin');
+
+
+const webpackConfig = require('./webpack.config');
 
 sass.compiler = require('node-sass');
 
@@ -27,18 +32,25 @@ function css() {
 }
 
 function js() {
-    return gulp
-        .src(['./src/**/*.js'])
-        .pipe(
-            webpack_gulp({
-                entry: './src/js/script.js',
-                mode: 'development'
-            })
-        )
-        .pipe(gulp.dest('dist/js'));
+    return src('./src/**/*.js')
+        .pipe(webpack(webpackConfig))
+        .pipe(dest('dist/js'));
 };
 
+function imagewebp() {
+    return src('./src/img/*')
+        .pipe(webp())
+        .pipe(dest('dist/webp'))
+}
 
+function imageminify() {
+    return src('./src/img/*')
+        .pipe(imagemin())
+        .pipe(dest('dist/img'))
+}
+
+exports.imageminify = imageminify;
+exports.imagewebp = imagewebp;
 exports.js = js;
 exports.html = html;
 exports.css = css;
@@ -49,10 +61,17 @@ exports.default = function () {
 
     html();
     css();
+    js();
+    imagewebp();
+    imageminify();
 
-    watch(['./src/**/*.pug', './src/**/*.scss'], function () {
+
+    watch(['./src/**/*.pug', './src/**/*.scss', './src/**/*.js', './src/img/*'], function () {
         html();
         css();
+        js();
+        imagewebp();
+        imageminify();
         bs.reload();
         done();
     });

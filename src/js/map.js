@@ -1,4 +1,4 @@
-$(document).ready(function () {
+export default function () {
 
     let mymap = L.map('map').setView([40.66839, -73.8224], 17);
 
@@ -34,5 +34,4 @@ $(document).ready(function () {
     circle.bindPopup("Hello!");
     circletwo.bindPopup("Hello!");
     circlethree.bindPopup("Hello!");
-
-});
+}

@@ -1,4 +1,12 @@
-import { mySwiper, mySwiperHeader } from "sliders";
+import sliders from './sliders';
+import AOS from 'aos';
+import burger from './burger';
+import map from './map';
+AOS.init();
 
-mySwiper();
-mySwiperHeader();
+
+$(document).ready(function () {
+    sliders();
+    burger();
+    map();
+});

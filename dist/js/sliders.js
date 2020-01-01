@@ -1,7 +1,8 @@
-$(document).ready(function () {
-    console.log("ready!");
+import Swiper from 'swiper';
 
-    let mySwiperHeader = new Swiper('.header__slider-container', {
+export default function () {
+
+    new Swiper('.header__slider-container', {
         speed: 700,
         slidesPerView: 1,
         loop: true,
@@ -16,12 +17,7 @@ $(document).ready(function () {
         }
     });
 
-});
-
-$(document).ready(function () {
-    console.log("ready!");
-
-    let mySwiper = new Swiper('.news__slider-container', {
+    new Swiper('.news__slider-container', {
         speed: 500,
         spaceBetween: 30,
         slidesPerView: 3,
@@ -76,5 +72,4 @@ $(document).ready(function () {
             }
         }
     });
-
-});
+}    
