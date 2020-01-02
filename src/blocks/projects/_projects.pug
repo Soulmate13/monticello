@@ -10,7 +10,7 @@ mixin projects
                     .row                        
                         .col-xl-7.offset-xl-0.col-lg-5.offset-lg-1.col-md-8.offset-md-2.col-sm-10.offset-sm-1.col-12
                             .projects__img-wrapper
-                                img.projects__img(src="./webp/projects_1.webp", alt="picture of a building")
+                                +picture("projects_1", "png", "picture of a building").projects__img
                         .col-xl-5.col-lg-6.offset-lg-0.col-md-8.offset-md-2.col-sm-10.offset-sm-1.col-12
                             .projects__info
                                 h4.projects__subtitle-top One World
@@ -35,4 +35,4 @@ mixin projects
                                     p.projects__details Hong Kong - 1588 Feet
                         .col-xl-7.offset-xl-0.col-lg-5.offset-lg-0.col-md-8.offset-md-2.col-sm-10.offset-sm-1.col-12.order-lg-2.order-1
                             .projects__img-wrapper.projects__img-wrapper--right
-                                img.projects__img(src="./webp/projects_2.webp", alt="picture of a building")
+                                +picture("projects_2", "png", "picture of a building").projects__img
