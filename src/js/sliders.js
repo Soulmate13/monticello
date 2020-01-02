@@ -32,9 +32,9 @@ export default function () {
             nextEl: '.news__slide-arrow-next',
             prevEl: '.news__slide-arrow-prev',
         },
-        //     // autoplay: {
-        //     //     delay: 4000,
-        // }
+        autoplay: {
+            delay: 4000,
+        },
         parallax: true,
         breakpoints: {
             1200: {
