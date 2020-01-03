@@ -70,8 +70,6 @@ exports.default = function () {
         html();
         css();
         js();
-        imagewebp();
-        imageminify();
         bs.reload();
         done();
     });
