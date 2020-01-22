@@ -1,19 +1,19 @@
 const bs = require("browser-sync").create();
 const { src, dest, watch } = require('gulp');
+
 const pug = require('gulp-pug');
+
 const sass = require('gulp-sass');
+sass.compiler = require('node-sass');
 const sourcemaps = require('gulp-sourcemaps');
 const csso = require('gulp-csso');
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
-const webpack = require('webpack-stream');
+
 const webp = require('gulp-webp');
 const imagemin = require('gulp-imagemin');
 
-
-const webpackConfig = require('./webpack.config');
-
-sass.compiler = require('node-sass');
+const webpack = require('webpack-stream');
 
 function html() {
     return src('./src/pug/index.pug')
@@ -32,9 +32,10 @@ function css() {
 }
 
 function js() {
-    return src('./src/**/*.js')
-        .pipe(webpack(webpackConfig))
+    return src('./src/js/script.js')
+        .pipe(webpack(require('./webpack.config.js')))
         .pipe(dest('dist/js'));
+
 };
 
 function imagewebp() {
