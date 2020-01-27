@@ -4,12 +4,12 @@
 
 ## Technologies used:
   * Pug.js
-  * SCSS/SASS
+  * SCSS
   * JavaScript
   * Bootstrap
-  * Reset.css
   * Fancyapp
   * Swiper
   * Gulp
+  * Webpack
 
 
