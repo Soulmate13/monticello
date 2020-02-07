@@ -1,4 +1,4 @@
-# Monticello Project
+# Monticello Project in Beetroot Academy
 
 ## Check out the live version [here]( https://soulmate13.github.io/monticello/dist/index.html "Monticello")
 
