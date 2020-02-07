@@ -1,3 +1,6 @@
+import 'url-polyfill';
+import "@babel/polyfill";
+
 import sliders from './sliders';
 import AOS from 'aos';
 import burger from './burger';
